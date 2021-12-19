@@ -1,0 +1,85 @@
+body {
+  font-family: sans-serif;
+  background-color: #212121;
+  background-repeat: repeat;
+  background-attachment: scroll;
+  color: #c1c1c1;
+  margin: 0;
+  border: 0;
+  overflow: auto;
+  display: block;
+  height: 100%;
+}
+#tooltip {
+    display: none;
+    background-color: rgba(50, 50, 50, .7);
+    color: #c1c1c1;
+    border-radius: 3px;
+    border: 1px solid #616161;
+    padding: 5px;
+    position: absolute;
+    z-index: 99; /* always on top */
+}
+
+form {
+  width: 350px;
+}
+
+form label {
+  float: left;
+  padding: 3px;
+  margin: 5px;
+}
+
+form input {
+  float: right;
+}
+
+.formInput {
+  overflow: auto;
+}
+
+input, select {
+  border: 1px solid #616161;
+  padding: 3px;
+  margin: 5px;
+  background-color: #414141;
+  color: #c1c1c1;
+}
+
+a {
+  color: #81a1e1;
+}
+
+a:visited {
+  color: #6191c1;
+}
+
+.hiddenList {
+  display: none;
+}
+
+.pie {
+  display: flex;
+}
+
+.pie svg {
+  width: 70%;
+}
+
+#legend {
+  min-width: 30%;
+  margin-top: 90px;
+}
+
+.topDetail {
+  cursor: pointer;
+}
+
+#legend ul {
+  cursor: default;
+}
+
+#detailHelp {
+  color: #fff;
+}

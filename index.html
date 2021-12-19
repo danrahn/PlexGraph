@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>PlexGraph</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div id="plexFrame">
+      <form id="plexInfo">
+        <div class="formInput">
+          <label for="ip">IP/Host: </label>
+          <input type="text" name="ip" id="ip" value="127.0.0.1">
+        </div>
+        <div class="formInput">
+          <label for="port">Port: </label>
+          <input type="text" name="port" id="port" value="32400">
+        </div>
+        <div class="formInput">
+          <label for="token">Token <sup>(<a href="https://support.plex.tv/articles/204059436-finding-an-authentication-token-x-plex-token/" target="_blank">?</a>)</sup>: </label>
+          <input type="password" name="token" id="token">
+        </div>
+        <div class="formInput">
+          <label for="loadExtra">Show Additional Details <sup>(<span href="#" id="detailHelp">?</span>)</sup>: </label>
+          <input type="checkbox" name="loadExtra" id="loadExtra">
+        </div>
+        <div class="formInput"><input type="button" value="Load Libraries" id="continue"></input></div>
+        <div id="libraryList"><label for="libraries">Select a library to parse:</label><select id="libraries"></select></div>
+      </form>
+    <div id='pieChart'></div>
+  </div>
+    <script src="script.js"></script>
+    <script src="common.js"></script>
+    <script src="tooltip.js"></script>
+    <script src="chart.js"></script>
+  </body>
+</html>
